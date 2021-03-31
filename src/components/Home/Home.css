@@ -1,0 +1,49 @@
+.form-control{
+    padding: 42px;
+    border: none !important;
+    height: 50px !important;
+    border-radius: 3.25rem !important;
+    background-color: rgba(26, 23, 23, 0.753) !important;
+    color: rgb(255, 255, 255) !important;
+    outline: none !important;
+}
+.form-control::placeholder{
+    color: rgb(10, 10, 10) !important;
+    padding-left: 15px;
+}
+.form-control:focus{
+    background-color: white !important;
+    color: rgb(10, 10, 10) !important;
+    outline: none !important;
+}
+.btn{
+    padding: .375rem 1.75rem !important;
+    background-color: #f3820d !important;
+    border: tomato;
+    color: white !important;
+}
+.btn-success{
+}
+.search-box{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 50% !important;
+}
+.search-btn {
+    position: absolute;
+    top: 0;
+    right: 0%;
+    height: 100%;
+    border-radius: 3.25rem !important;
+}
+
+
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}

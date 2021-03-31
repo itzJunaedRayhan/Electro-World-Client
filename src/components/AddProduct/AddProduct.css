@@ -1,0 +1,102 @@
+h3{
+    padding: 35px 25px;
+}
+.form {
+    margin: 15px;
+    background: #fff;
+    box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+    border-radius: 5px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    border-top: 5px solid #0e3721;
+    animation: bounce 1.5s infinite;
+}
+::-webkit-input-placeholder {
+    font-size: 1.3em;
+}
+
+
+input[type="text"],
+input[type="number"] {
+    background-color: #ebebeb;
+    height: 50px;
+    color: black;
+    border: none;
+    outline: none;
+}
+input[type="text"]:hover,
+input[type="number"]:hover {
+    border-bottom: 5px solid #0e3721;
+    transition: ease 0.5s;
+}
+.formEntry {
+    display: block;
+    margin: 30px auto;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.5s ease 0s;
+}
+[type="file"] {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+}
+[type="file"] + label {
+    width: 140px;
+    background: #f15d22;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Rubik', sans-serif;
+    font-size: inherit;
+    font-weight: 500;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    outline: none;
+    padding: 10px 20px;
+    position: relative;
+    transition: all 0.3s;
+    vertical-align: middle;
+} 
+[type="file"] + label:hover{
+    background-color: transparent;
+    color: #f15d22;
+    border: 2px solid #f15d22;
+}
+.submit {
+    width: 200px;
+    color: white;
+    background-color: #0e3721;
+    font-size: 20px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+.submit:hover {
+    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+    transform: translateY(-3px);
+    border-radius: 0%;
+    background-color: transparent;
+    border: 2px solid #0e3721;
+    color: #0e3721;
+    border-radius: 10px;
+}
+  
+@keyframes bounce {
+    0% {
+      tranform: translate(0, 4px);
+    }
+    50% {
+      transform: translate(0, 8px);
+    }
+} 
+  
