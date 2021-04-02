@@ -6,7 +6,7 @@ const ManageProduct = (props) => {
     const {name, madeIn, price, _id} = props.product;
     
     const deleteProduct = (event,id) =>{
-        fetch(`http://localhost:3500/delete/${id}`,{
+        fetch(`https://calm-brushlands-85617.herokuapp.com/delete/${id}`,{
             method: 'DELETE'
         })
         .then(res => res.json())

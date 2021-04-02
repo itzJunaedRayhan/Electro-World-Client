@@ -10,7 +10,7 @@ const Checkout = () => {
     const [loggedInUser, setLoggedInUser] = useContext(userContext);
     const [product, setProduct] = useState({});
     useEffect(()=>{
-        fetch(`http://localhost:3500/checkout/`+_id)
+        fetch(`https://calm-brushlands-85617.herokuapp.com/checkout/`+_id)
         .then(res => res.json())
         .then(data => setProduct(data))
     },[_id])
@@ -20,7 +20,7 @@ const Checkout = () => {
         let current_datetime = new Date()
         let formatted_date = current_datetime.getDate() + "-" + (current_datetime.getMonth() + 1) + "-" + current_datetime.getFullYear()
         const orderDetails = {...loggedInUser, product: product, Time: formatted_date}
-        fetch('http://localhost:3500/orders',{
+        fetch('https://calm-brushlands-85617.herokuapp.com/orders',{
             method : 'POST',
             headers : {
                 'Content-Type' : 'application/json'

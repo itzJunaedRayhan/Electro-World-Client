@@ -15,7 +15,7 @@ const AddProduct = () => {
             madeIn: data.made,
             imgURL: imgURL
         }
-        const url = `http://localhost:3500/addProducts`
+        const url = `https://calm-brushlands-85617.herokuapp.com/addProducts`
         fetch(url, {
             method: 'POST',
             headers: {
