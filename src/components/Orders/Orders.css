@@ -1,0 +1,22 @@
+.order-wrapper h4{
+    margin-top: 50px;
+    text-align: center;
+}
+.order-detail h1 span{
+    color: red;
+}
+.order-detail{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    position: relative;
+}
+.order-detail table{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+.order-detail th, td {
+    padding: 15px;
+  }

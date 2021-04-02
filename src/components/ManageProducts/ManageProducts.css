@@ -1,0 +1,11 @@
+@media (max-width: 720px){
+    h2{
+        font-size: 15px !important;
+    }
+    table th{
+        font-size: 11px;
+    }
+    table td{
+        font-size: 8px;
+    }
+}

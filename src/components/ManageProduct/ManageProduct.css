@@ -1,0 +1,36 @@
+.deleteIcon{
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+    padding: 5px;
+    font-size: 27px;
+    background-color: tomato;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.editIcon{
+    display: inline-block;
+    width: 35px;
+    height: 25px;
+    padding: 5px;
+    font-size: 27px;
+    background-color: #3BC83B;
+    border-radius: 5px;
+    color: white;
+    margin-right: 7px;
+    cursor: pointer;
+}
+tbody tr td:last-child{
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+/* @media (max-width: 420px){
+    .deleteIcon,
+    .editIcon{
+        display: inline-block;
+        font-size: 18px;
+        width: 25px
+    }
+} */

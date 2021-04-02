@@ -30,13 +30,19 @@
     font-size: 20px;
 }
 .items .login{
-    background-color: tomato !important;
+    background-color: #71BA58 !important;
     color: white !important;
+    width: 170px;
+    text-transform: capitalize;
 }
 .login a{
+    text-transform: capitalize;
+    width: 170px;
     color: #fff !important;
 }
-
+.login a:hover{
+    color: black !important;
+}
 .navbar button{
     width: 70px !important;
 }

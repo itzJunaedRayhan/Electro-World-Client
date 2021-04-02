@@ -1,0 +1,31 @@
+.login{
+    width: 100vw;
+}
+.login h1{
+    font-family: fantasy;
+    font-size: 26px;
+    color: rgb(65, 56, 50);
+    padding: 30px 0px 0px 50px;
+}
+.GoogleLogIn{
+    display: block;
+    width: 175px;
+    margin: 150px auto;
+    height: 50px;
+    border: 2px solid transparent;
+    color: white;
+    background: #71BA58;
+    border-radius: 7px;
+    font-size: 20px;
+}
+.GoogleLogIn:hover{
+    background: transparent;
+    border: 2px solid tomato;
+    color: tomato;
+}
+.GoogleLogIn .icon{
+    display: inline-block;
+    margin-right: 10px;
+    color: tomato;
+}
+

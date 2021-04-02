@@ -1,0 +1,32 @@
+.checkout{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 150px auto;
+    position: relative;
+}
+thead{
+    border-bottom: 2px solid #CECECE;
+    color: #CECECE !important;
+}
+tbody,
+tfoot{
+    color: black !important;
+    font-weight: 700;
+}
+.checkout .checkoutBtn{
+    width: 125px;
+    height: 50px;
+    border: 2px solid transparent;
+    color: white;
+    background: #71BA58;
+    border-radius: 7px;
+    position: absolute;
+    right: 1%;
+    bottom: -25%;
+}
+.checkout .checkoutBtn:hover{
+    background: transparent;
+    border: 2px solid #71BA58;
+    color: #71BA58;
+}

@@ -1,6 +1,9 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import Sidebar from '../Sidebar/Sidebar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faCloudUploadAlt} from '@fortawesome/free-solid-svg-icons'
 import './AddProduct.css'
 const AddProduct = () => {
     const { register, handleSubmit } = useForm();
@@ -36,17 +39,26 @@ const AddProduct = () => {
         });
     }
     return (
+        <div className="row">
+        <Sidebar/>
+        <div className="col-md-8">
             <div class="wrapper">
-                <h3>Add Product</h3>
-                <form onSubmit={handleSubmit(onSubmit)} class="form">
-                    <input type="text" name="name" class="formEntry" placeholder="Product Name" ref={register} required/>
-                    <input type="number" name="price" class="formEntry" placeholder="Product Price" ref={register} required/>
-                    <input type="text" name="made" class="formEntry" placeholder="Made In" ref={register} required/>
-                    <input type="file" id="file" onChange={handeImg} required/>
-                    <label for="file" class="fileBtn">Photo upload</label>
-                    <button type="submit" class="submit formEntry">Submit</button>
-                </form>
+                    <h3>Add Product</h3>
+                    <form onSubmit={handleSubmit(onSubmit)} className="form">
+                        <input type="text" name="name" className="formEntry" placeholder="Product Name" ref={register} required/>
+                        <input type="number" name="price" className="formEntry" placeholder="Product Price" ref={register} required/>
+                        <input type="text" name="made" className="formEntry" placeholder="Made In" ref={register} required/>
+                        <input type="file" id="file" />
+                        <label for="file" class="btn-2">upload <FontAwesomeIcon className="icon" icon={faCloudUploadAlt} /></label>
+                        <button type="submit" class="submit formEntry">Submit</button>
+                    </form>
             </div>
+        </div>
+    </div>
+
+
+
+            
     );
 };
 
