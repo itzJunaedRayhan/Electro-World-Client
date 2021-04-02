@@ -18,5 +18,8 @@
         2.  Server   =>   https://github.com/Porgramming-Hero-web-course/full-stack-server-itzJunaedRayhan
 
     website Hosting Links:
-        1.  Client  =>
+        1.  Client  =>  https://web-genesis-electro-world.web.app/
         2.  Server  =>  https://calm-brushlands-85617.herokuapp.com/products
+
+
+        
