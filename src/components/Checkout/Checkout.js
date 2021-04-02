@@ -61,9 +61,7 @@ const Checkout = () => {
                                 </tr>
                             </tfoot>
                         </table>
-                        <Link to="/orders">
-                            <button onClick={handleCheckOut} className="checkoutBtn">Checkout</button>
-                        </Link>
+                        <button onClick={handleCheckOut} className="checkoutBtn">Checkout</button>
                     </div>
                 </div>
         </div>

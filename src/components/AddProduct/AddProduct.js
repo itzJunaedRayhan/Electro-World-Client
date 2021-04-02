@@ -15,6 +15,7 @@ const AddProduct = () => {
             madeIn: data.made,
             imgURL: imgURL
         }
+        console.log(imgURL, 'Image Url')
         const url = `https://calm-brushlands-85617.herokuapp.com/addProducts`
         fetch(url, {
             method: 'POST',
@@ -48,7 +49,7 @@ const AddProduct = () => {
                         <input type="text" name="name" className="formEntry" placeholder="Product Name" ref={register} required/>
                         <input type="number" name="price" className="formEntry" placeholder="Product Price" ref={register} required/>
                         <input type="text" name="made" className="formEntry" placeholder="Made In" ref={register} required/>
-                        <input type="file" id="file" />
+                        <input type="file" id="file" onChange={handeImg} />
                         <label for="file" class="btn-2">upload <FontAwesomeIcon className="icon" icon={faCloudUploadAlt} /></label>
                         <button type="submit" class="submit formEntry">Submit</button>
                     </form>
